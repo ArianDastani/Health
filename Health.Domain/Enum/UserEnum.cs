@@ -2,7 +2,7 @@
 
 namespace Health.Domain.Enum
 {
-	internal class UserEnum
+	public class UserEnum
 	{
 		
 		public enum UserTypeEnum
