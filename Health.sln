@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health.Peresentaion", "Heal
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health.Resources", "Resources\Health.Resources.csproj", "{ECFD3E2E-6B12-4955-9116-5BD77B5BF143}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{48E0C1D8-4F3B-4E7E-8EDB-FCD229A2E4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48E0C1D8-4F3B-4E7E-8EDB-FCD229A2E4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48E0C1D8-4F3B-4E7E-8EDB-FCD229A2E4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFD3E2E-6B12-4955-9116-5BD77B5BF143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFD3E2E-6B12-4955-9116-5BD77B5BF143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFD3E2E-6B12-4955-9116-5BD77B5BF143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFD3E2E-6B12-4955-9116-5BD77B5BF143}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +72,7 @@ Global
 		{111A3193-0529-4349-95C2-5E2E673C3BFC} = {CDD97BE4-2B7F-4A35-93B8-6FF23190502E}
 		{137D5FD9-0495-43F1-BA18-8EB0EBBEAF8D} = {165734EE-15B0-4D45-9F5A-26DF8AEA3A1A}
 		{48E0C1D8-4F3B-4E7E-8EDB-FCD229A2E4DA} = {906019EF-C128-4F95-80F1-C18879CC4AEA}
+		{ECFD3E2E-6B12-4955-9116-5BD77B5BF143} = {906019EF-C128-4F95-80F1-C18879CC4AEA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF9F5655-1476-4856-A46A-C4DD351B5CAF}

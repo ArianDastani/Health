@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="HealthResource-fa.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HealthResource-fa.resx</DependentUpon>
+    </Compile>
+    <Compile Update="HealthResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HealthResource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resource-fa.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource-fa.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="HealthResource-fa.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HealthResource-fa.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="HealthResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HealthResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource-fa.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource-fa.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,4 +1,5 @@
-﻿using Health.Domain.Base;
+﻿using System.ComponentModel.DataAnnotations;
+using Health.Domain.Base;
 using Health.Domain.Enum;
 
 namespace Health.Domain.Entitis.Users
@@ -6,6 +7,7 @@ namespace Health.Domain.Entitis.Users
     public class User:BaseEntity
     {
 		#region Propertis
+		[Display(Name = nameof(Resources.Resource.NationalId), ResourceType = typeof(Resources.Resource))]
 		public string NationalId { get; set; }
 		public string FirstName { get; set; }
 		public string LastName { get; set; }
