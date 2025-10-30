@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +10,7 @@ namespace Health.Domain.Base
 {
     public class BaseEntity
     {
+        [Key]
         public Guid UniqueId { get; set; }
 
         public DateTime? CreatedOn { get; set; }
@@ -23,6 +26,10 @@ namespace Health.Domain.Base
         public string? DeletedUserIp { get; set; }
 
         public bool IsDeleted { get; set; }
+
+        public bool IsSystem { get; set; }
+        [Timestamp]
+        public byte[] TimeStamp { get; set; }
 
      
     }

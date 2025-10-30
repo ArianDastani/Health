@@ -1,14 +1,20 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Health.Domain.Base;
 using Health.Domain.Enum;
 
 namespace Health.Domain.Entitis.Users
 {
+	[DisplayName("کاربران")]
+	[Table(name: "User", Schema = "Health")]
     public class User:BaseEntity
     {
 		#region Propertis
-		[Display(Name = nameof(Resources.Resource.NationalId), ResourceType = typeof(Resources.Resource))]
-		public string NationalId { get; set; }
+		//[Display(Name = nameof(Resources.Resource.NationalId), ResourceType = typeof(Resources.Resource))]
+		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+		public int Code { get; set; }
+		public string NationalCode { get; set; }
 		public string FirstName { get; set; }
 		public string LastName { get; set; }
 		public string Email { get; set; }
