@@ -12,7 +12,9 @@ namespace Health.Persistensce.Configuratin
 {
     public class UserConfig:IEntityTypeConfiguration<User>
     {
-        public void configure(EntityTypeBuilder<User> builder)
+     
+
+        public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.HasData(new User
             {

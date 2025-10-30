@@ -1,4 +1,5 @@
 using Health.Persistensce.Context;
+using Health.Persistensce.Extention;
 using Microsoft.EntityFrameworkCore;
 
 namespace Health.Peresentaion
@@ -14,10 +15,7 @@ namespace Health.Peresentaion
             #endregion
 
             #region Context
-            builder.Services.AddDbContext<HealthDbContext>(op =>
-            {
-                op.UseSqlServer("Con");
-            });
+            builder.Services.AddDataLeyer();
             #endregion
 
             #region Autentication
