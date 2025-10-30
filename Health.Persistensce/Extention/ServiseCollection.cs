@@ -15,7 +15,7 @@ namespace Health.Persistensce.Extention
         {
             services.AddDbContext<HealthDbContext>(op =>
             {
-                op.UseSqlServer("Date Source=.;initiol catalog=HealthDb;Integertaed security=true;TrustServerCertificate=True;");
+                op.UseSqlServer("Data Source=.;INITIAL catalog=HealthDb;integrated security=true;TrustServerCertificate=True;");
             });
         }
     }
