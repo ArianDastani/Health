@@ -16,7 +16,8 @@ namespace Health.Domain.Entitis.Users
 		public string PasswordHash { get; set; }
 		public string UserName { get; set; }
 		public string Bio { get; set; }
-		public UserEnum.UserTypeEnum UserType { get; set; }
+        public bool IsAdmin { get; set; }
+        public UserEnum.UserTypeEnum UserType { get; set; }
 
 		#endregion
 
