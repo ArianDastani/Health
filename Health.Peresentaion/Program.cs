@@ -15,7 +15,7 @@ namespace Health.Peresentaion
             #endregion
 
             #region Context
-            builder.Services.AddDataLeyer();
+            builder.Services.AddDataLayer(builder.Configuration);
             #endregion
 
             #region Autentication
