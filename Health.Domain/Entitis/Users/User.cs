@@ -11,6 +11,8 @@ namespace Health.Domain.Entitis.Users
     public class User:BaseEntity
     {
 		#region Propertis
+		[Key]
+		public Guid UniqueId { get; set; }
 		//[Display(Name = nameof(Resources.Resource.NationalId), ResourceType = typeof(Resources.Resource))]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		public int Code { get; set; }

@@ -10,9 +10,6 @@ namespace Health.Domain.Base
 {
     public class BaseEntity
     {
-        [Key]
-        public Guid UniqueId { get; set; }
-
         public DateTime? CreatedOn { get; set; }
 
         public DateTime? UpdatedOn { get;set; }
