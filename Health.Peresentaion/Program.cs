@@ -35,12 +35,23 @@ namespace Health.Peresentaion
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            app.Use(async (context, next) =>
+            {
+	            await next();
+	            if (context.Response.StatusCode == StatusCodes.Status404NotFound)
+	            {
+		            context.Request.Path = "/Erorr404";
+		            await next();
+	            }
+            });
+
+			app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseAuthorization();
+
 
             app.MapControllerRoute(
                 name: "default",
